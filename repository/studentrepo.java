@@ -1,5 +1,7 @@
-package com.example.demo.repository
+package com.example.demo.repository;
 
-public class studentrepo(){
-    
+
+@Repository
+public interface studentrepo extends Jpa{
+
 }
