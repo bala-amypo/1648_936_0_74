@@ -1,5 +1,5 @@
 pakage com.example.demo.service
-import
+import com.example.demo.entity.studententity;
 public interface studentservice{
 studententity postValue(studententity entity)
 
