@@ -1,5 +1,6 @@
 pakage com.example.demo.service
+import
 public interface studentservice{
 studententity postValue(studententity entity)
-    users.put(entity,getId)
+
 }
