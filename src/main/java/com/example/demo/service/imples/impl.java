@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @service
 public class impl implements studentservice{
-@Autowired studentrepo stud;
+@Autowired studentr;
 //save()
 //findall()
 //findbyid()
