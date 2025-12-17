@@ -1,4 +1,5 @@
-package.com.example.demo.entity
+package.com.example.demo.entity;
+import java.util.Date;
 import jakarta.persistance.Entity;
 import jakarta.persistance.Id;
 import jakarta.persistance.GeneartedValue;
@@ -37,6 +38,6 @@ public class studententity{
     this.date=date;
     }
     public studententity(){
-        
+
     }
 }
