@@ -33,7 +33,7 @@ public class studententity{
     public studententity(Integer id, String user,String email,String password,Date date){
     this.id=id;
     this.user=user;
-    this.email.email;
+    this.email=email;
     this.password=password;
     this.date=date;
     }
