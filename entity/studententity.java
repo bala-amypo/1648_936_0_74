@@ -1,13 +1,13 @@
-package.com.example.demo.entity;
+package com.example.demo.entity;
 import java.util.Date;
-import jakarta.persistance.Entity;
-import jakarta.persistance.Id;
-import jakarta.persistance.GeneartedValue;
-import jakarta.persistance.GenerationType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 @Entity
 public class studententity{
     @Id
-    @GeneartedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Integer id;
     private String user;
@@ -27,8 +27,8 @@ public class studententity{
     public String getPassword() {return password;}
     public void setPassword(String password) {this.password=password}
 
-    public Date getUser() {return date;}
-    public void setUser(Date date) {this.date=date}
+    public Date getdates() {return date;}
+    public void setdates(Date date) {this.date=date}
 
     public studententity(Integer id, String user,String email,String password,Date date){
     this.id=id;
