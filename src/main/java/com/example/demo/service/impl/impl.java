@@ -1,9 +1,17 @@
 package com.example.demo.service.impl;
 import org.springframework.sterotype.service; 
-import com.
+import 
 
 
 @service
-public class impl{
+public class impl implements studentservice{
+@Autowired studentrepo student;
+//save()
+//findall()
+//findbyid()
+//deletebyid()
+//existsbyit()
+public studententity postValue(studententity entity){
 
+}
 }
