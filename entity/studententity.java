@@ -8,3 +8,5 @@ public class studententity{
     private Date date;
     private Time time;
 }
+public Integer getid() {return id;}
+
