@@ -1,9 +1,9 @@
-package com.example.demo.service.impl;
+package com.example.demo.service.imples;
 import org.springframework.sterotype.service;
-
+import com.example.demo.repository.studentrepo;
 import com.example.demo.entity.studententity;
-import com.example.demo.service.studentservice
-
+import com.example.demo.service.studentservice;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @service
 public class impl implements studentservice{
@@ -13,7 +13,7 @@ public class impl implements studentservice{
 //findbyid()
 //deletebyid()
 //existsbyit()
-public studententity postValue(studententity stu){
+public studententity postData(studententity stu){
     return student.save(stu);
 }
 }
