@@ -28,6 +28,6 @@ public class studentcontroller{
     }
       @GetMapping("/GET/{id}")
     public studententity alldata(@PathVariable int id){
-        return ser.find(id);
+        return ser.findid(id);
     }
 }

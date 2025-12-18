@@ -5,5 +5,5 @@ public interface studentservice{
 studententity postData(studententity stu);
 List<studententity>getAll();
 String delete(int id);
-studententity find(int id);
+studententity findid(int id);
 }
