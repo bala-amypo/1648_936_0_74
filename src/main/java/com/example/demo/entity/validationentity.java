@@ -16,8 +16,8 @@ public class validationentity{
     private String username;
     @Email
     private String email;
-    @MAx(3);
-    
+    @MAx(5);
+@NotNul
     private String password;
     private Integer age;
 }
