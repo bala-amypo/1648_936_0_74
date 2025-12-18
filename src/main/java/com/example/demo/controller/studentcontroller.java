@@ -32,7 +32,7 @@ public class studentcontroller{
         return ser.findid(id);
     }
     @PutMapping("/PUT/{id}")
-    public studentity updating(@PathVariable int id){
+    public studententity updating(@PathVariable int id){
         return ser.put(id);
     }
 }
