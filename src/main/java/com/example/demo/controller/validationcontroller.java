@@ -4,13 +4,12 @@ import org.springframework.web.bind.annotation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.validationservice;
 import com.example.demo.entity.validationentity;
-import java.util.List;
 @RestController
 public class validationcontroller{
-    @Autowired validationservice ser;
+    @Autowired validationservice server;
 
     @PostMapping("/Post")
-    public validationentity senddata(@Valid @RequestBody validationentity stu){
-        return ser.postData(stu);
+    public validationentity senddata(@Valid @RequestBody validationentity st){
+        return server.postdata(st);
     }
 }
