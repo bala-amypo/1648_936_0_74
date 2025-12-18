@@ -29,7 +29,7 @@ public String delete( int id){
     return "your id is deleted successfully deleted";
     }
     @Override
-    public String studententity findid(int id){
+    public studententity findid(int id){
         return student.findById(id);
     }
 }
