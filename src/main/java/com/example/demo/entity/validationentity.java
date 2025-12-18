@@ -1,6 +1,5 @@
-package com.exmple.demo.entity;
-
-import jakarta.persistence;
+package com.example.demo.entity;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,88 +8,67 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
-
 @Entity
 public class validationentity{
-
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+  private Long id;
+  @NotNull
+  @Size(min=2,max = 6,message="must be of 2 to 6 characters") 
+  private String name;
+  @Email(message="Email is not Valid")
+  private String email;
+  @Size(max=6)
+  @NotNull(message="password is mandatory")
+  private String password;
+  @Max(30)
+  @Positive(message="Age must be positive")
+   private int age;
 
-    @NotNull
-    @Size(min=2,max=30,message="2 to 10 character must be there")
-    private String username;
 
-    @NotNull
-    @Email(message="Give a valid email")
-    private String email;
+   public Long getId() {
+    return id;
+    }
+public void setId(Long id){
+    this.id=id;
+}
+public String getName(){
+    return name;
+}
+public void setName(String name){
+    this.name=name;
+}
+public String getEmail(){
+    return email;
+}
+public void setEmail(String email){
+    this.email=email;
+}
+public String getPassword(){
+    return password;
+}
+public void setPassword(String password){
+    this.password=password;
+}
+public int getAge(){
+    return age;
+}
+public void setAge(int age){
+    this.age=age;
+}
+public validationentity(Long id,
+@NotNull
+  @Size(min=2,max = 6,message="must be of 2 to 6 characters") String name, @Email(message="Email is not Valid")String email,
+    @Size(max=6)
+  @NotNull(message="password is mandatory")String password,  @Max(30)
+  @Positive(message="Age must be positive")int age){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.age=age;
+  }
+  public validationentity(){
 
-    @Size(min=2,max=8,message="The password must be in the range of 2 to 8 ")
-    @NotNull(message="Password should not be empty")
-    private String password;
-
-    @Positive(message="Age must be a positive number")
-    @Max30
-    private Integer age;
-
-    public Long getId(){
-        return id;
-    }
-    public void setId(Long id){
-        this.id=id;
-    }
-    public String getUsername(){
-        return username;
-    }
-    public void setUsername(String username){
-        this.username=username;
-    }
-    public String getEmail(){
-        return email;
-    }
-    public void setEmail(String email){
-        this.email=email;
-    }
-    public String getPassword(){
-        return password;
-    }
-    public void setPassword(String password){
-        this.password=password;
-    }
-    public Integer getAge(){
-        return age;
-    }
-    public void setAge(Integer age){
-        this.age=age;
-    }
-
-    public validationentity(@Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    Long id,
-
-    @NotNull
-    @Size(min=2,max=30,message="2 to 10 character must be there")
-    String username,
-
-    @NotNull
-    @Email(message="Give a valid email")
-    String email,
-
-    @Size(min=2,max=8,message="The password must be in the range of 2 to 8 ")
-    @NotNull(message="Password should not be empty")
-    String password,
-
-    @Positive(message="Age must be a positive number")
-    @Max30
-     Integer age){
-        this.id=id;
-        this.username=username;
-        this.email=email;
-        this.password=password;
-        this.age=age;
-    }
-    public validationentity(){
-        
-    }
-
+  }
 }
