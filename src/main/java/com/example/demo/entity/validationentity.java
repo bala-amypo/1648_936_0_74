@@ -66,23 +66,23 @@ public class validationentity{
 
     public validationentity( @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
     @NotNull
     @Size(min=2,max=30,message="2 to 10 character must be there")
-    private String username;
+    String username;
 
     @NotNull
     @Email(message="Give a valid email")
-    private String email;
+    String email;
 
     @Size(min=2,max=8,message="The password must be in the range of 2 to 8 ")
     @NotNull(message="Password should not be empty")
-    private String password;
+    password;
 
     @Positive(message="Age must be a positive number")
     @Max30
-    private Integer age){
+     Integer age){
         this.id=id;
         this.username=username;
         this.email=email;
