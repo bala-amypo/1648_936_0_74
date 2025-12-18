@@ -16,10 +16,12 @@ public class impl implements studentservice{
 
 @Override
 public studententity postData(studententity stu){
+
     return student.save(stu);
+}
     @Override
-    public List<studententity>getAllData(){
+    public List<studententity>getAll(){
         return studentrepo.findAll();
         }
     }
-}
+
