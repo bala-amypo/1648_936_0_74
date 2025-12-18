@@ -28,5 +28,6 @@ public String delete( int id){
     student.deleteById(id);
     return "your id is deleted successfully deleted";
     }
+    public studenti
 }
 
