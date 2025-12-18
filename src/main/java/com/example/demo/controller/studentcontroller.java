@@ -26,4 +26,8 @@ public class studentcontroller{
         ser.delete(id);
         return "delete is successfully";
     }
+      @GetMapping("/GET/{id}")
+    public studententity alldata(){
+        return ser.find();
+    }
 }
