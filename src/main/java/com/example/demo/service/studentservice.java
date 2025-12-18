@@ -6,4 +6,5 @@ studententity postData(studententity stu);
 List<studententity>getAll();
 String delete(int id);
 studententity findid(int id);
+
 }
