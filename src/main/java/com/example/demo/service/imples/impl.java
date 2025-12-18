@@ -36,9 +36,9 @@ public String delete( int id){
     public studententity put(int id,studententity entity){
     if(student.existsById(id)){
         entity.setId(id);
-        return student.save()
-            }else{
-    }
+        return student.save(entity);
+            }
+        return null;
     }
 }
 
