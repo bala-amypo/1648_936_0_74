@@ -28,8 +28,8 @@ public String delete( int id){
     student.deleteById(id);
     return "your id is deleted successfully deleted";
     }
-    @Override
-    public studententity find(int id){
+@Override
+    public studententity findid( int id){
         return student.findById(id).orElse(null);
     }
 }
