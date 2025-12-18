@@ -5,7 +5,7 @@ import com.example.demo.entity.validationentity;
 import com.example.demo.service.validationservice;
 import org.springframework.beans.factory.annotation.Autowired;
 @Service
-public class impl implements validationservice{
+public class validationimpl implements validationservice{
 @Autowired validationrepo stud;
 //save()
 //findall()
