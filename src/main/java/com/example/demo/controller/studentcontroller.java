@@ -15,7 +15,7 @@ public class studentcontroller{
         return ser.postData(stu);
     }
     @GetMapping("/GET")
-    public studententity findAlldata(@RequestBody studententity stu){
-        return ser.getAll(stu);
+    public studententity findAlldata(){
+        return ser.getAll();
     }
 }
