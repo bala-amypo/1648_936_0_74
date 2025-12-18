@@ -90,7 +90,7 @@ public class validationentity{
         this.password=password;
         this.age=age;
     }
-    public ValidationEntity(){
+    public validationentity(){
         
     }
 
