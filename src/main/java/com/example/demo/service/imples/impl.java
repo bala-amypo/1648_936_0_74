@@ -19,7 +19,7 @@ public studententity postData(studententity stu){
     return student.save(stu);
     @Override
     public List<studententity>getAllData(){
-        return studentrepo.findAll();
+        return studentrepo.findAll(stu);
         }
     }
 }
