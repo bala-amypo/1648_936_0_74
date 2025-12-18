@@ -23,9 +23,10 @@ public studententity postData(studententity stu){
 public List<studententity>getAll(){
     return student.findAll();
     }
-    
-public studententity delete(studententity stu){
-    return student.deleting(stu);
-}
+@Override
+public String delete(studententity stu){
+    student.deleting(stu);
+    return "your id is deleted successfully deleted";
+    }
 }
 

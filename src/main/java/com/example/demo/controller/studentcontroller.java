@@ -19,5 +19,9 @@ public class studentcontroller{
     public List<studententity>findAlldata(){
         return ser.getAll();
     }
-    @
+    @DeleteMapping("/Delete")
+    public String deleting(@PathVariable int id){
+        ser.delete(id);
+        return "delete is successf"
+    }
 }
