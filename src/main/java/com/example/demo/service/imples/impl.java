@@ -25,7 +25,7 @@ public List<studententity>getAll(){
     }
 @Override
 public String delete( int id){
-    student.deletdata(id);
+    student.deleteById(id);
     return "your id is deleted successfully deleted";
     }
 }
