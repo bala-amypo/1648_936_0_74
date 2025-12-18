@@ -4,11 +4,9 @@ import com.example.demo.repository.validationrepo;
 import com.example.demo.entity.validationentity;
 import com.example.demo.service.validationservice;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
 @Service
 public class impl implements validationservice{
-@Autowired validationrepo student;
+@Autowired validationrepo stud;
 //save()
 //findall()
 //findbyid()
@@ -16,8 +14,8 @@ public class impl implements validationservice{
 //existsbyit()
 
 @Override
-public validationentity postData(validationentity stu){
-    return student.save(stu);
+public validationentity postdata(validationentity st){
+    return stud.save(st);
 }
 }
 
