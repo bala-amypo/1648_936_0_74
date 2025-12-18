@@ -30,4 +30,5 @@ public class studentcontroller{
     public studententity alldata(@PathVariable int id){
         return ser.findid(id);
     }
+    
 }

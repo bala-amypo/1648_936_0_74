@@ -32,5 +32,9 @@ public String delete( int id){
     public studententity findid( int id){
         return student.findById(id).orElse(null);
     }
+    @Override
+    public boolean studententity exists(int id){
+        return student.existsById(id);
+    }
 }
 
