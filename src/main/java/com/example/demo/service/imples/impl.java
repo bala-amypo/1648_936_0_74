@@ -30,7 +30,7 @@ public String delete( int id){
     }
     @Override
     public studententity find(int id){
-        return student.findById(id);
+        return student.findId(id);
     }
 }
 
