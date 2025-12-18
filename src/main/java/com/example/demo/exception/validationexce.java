@@ -1,5 +1,6 @@
-package com.example.demo.exception
+package com.example.demo.exception;
 
-public class validationexce {
 
+public class validationexce extends Runtimeexception(){
+public validationexce(String message){}
 }
