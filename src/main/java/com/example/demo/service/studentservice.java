@@ -7,5 +7,4 @@ List<studententity>getAll();
 String delete(int id);
 studententity findid(int id);
 studententity put(int id);
-studententity exists(int id);
 }

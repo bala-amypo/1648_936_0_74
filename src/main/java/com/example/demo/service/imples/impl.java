@@ -33,12 +33,12 @@ public String delete( int id){
         return student.findById(id).orElse(null);
     }
     @Override
-    public studententity put(int id){
-        return student.update(id);
+    public studententity put(int id,studententity entity){
+    if(student.existsById(id)){
+        entity.setId(id);
+        return student.save()
+            }else{
     }
-    // @Override
-    // public boolean studententity exists(int id){
-    //     return student.existsById(id);
-    // }
+    }
 }
 
