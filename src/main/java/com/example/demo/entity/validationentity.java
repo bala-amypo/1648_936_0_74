@@ -82,7 +82,8 @@ public class validationentity{
 
     @Positive(message="Age must be a positive number")
     @Max30
-     Integer age){
+     Integer age
+     ){
         this.id=id;
         this.username=username;
         this.email=email;
