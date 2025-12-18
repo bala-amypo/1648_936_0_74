@@ -29,8 +29,8 @@ public String delete( int id){
     return "your id is deleted successfully deleted";
     }
     @Override
-    public studententity findid(int id){
-        return student.findById(id);
+    public studententity find(int id){
+        return student.findById(id).orElse(null);
     }
 }
 
