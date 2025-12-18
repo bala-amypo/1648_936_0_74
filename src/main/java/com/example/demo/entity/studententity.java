@@ -21,7 +21,6 @@ public class studententity{
     public void setId(Integer id) {
         this.id=id;
         }
-
     public String getUser() {
         return user;
     }
