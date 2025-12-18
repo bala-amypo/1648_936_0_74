@@ -27,7 +27,7 @@ public class studentcontroller{
         return "delete is successfully";
     }
       @GetMapping("/GET/{id}")
-    public studententity alldata(){
-        return ser.find();
+    public studententity alldata(@PathVariable int id){
+        return ser.find(id);
     }
 }
