@@ -21,13 +21,13 @@ public class studentcontroller{
     public List<studententity>findAlldata(){
         return ser.getAll();
     }
-    @DeleteMapping("/Delete/{id}")
+    @DeleteMapping("/DELETE/{id}")
     public String deleting(@PathVariable int id){
         ser.delete(id);
         return "delete is successfully";
     }
-      @GetMapping("/GET/{id}")
-    public studententity alldata(@RequestBody int id){
+      @GetMapping("/GETID/{id}")
+    public studententity alldata(@PathVariable int id){
         return ser.findid(id);
     }
 }
