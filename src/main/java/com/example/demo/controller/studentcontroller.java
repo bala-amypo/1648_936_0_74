@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.studentservice;
 import com.example.demo.entity.studententity;
+import java.util.List;
 @RestController
 public class studentcontroller{
     @Autowired studentservice ser;
@@ -15,7 +16,7 @@ public class studentcontroller{
         return ser.postData(stu);
     }
     @GetMapping("/GET")
-    public studententity findAlldata(){
+    public List<studententity>findAlldata(){
         return ser.getAll();
     }
 }
