@@ -19,4 +19,5 @@ public class studentcontroller{
     public List<studententity>findAlldata(){
         return ser.getAll();
     }
+    @
 }
