@@ -40,7 +40,7 @@ public class validationentity{
         this.id=id;
     }
     public String getUsername(){
-        return Username;
+        return username;
     }
     public void setUsername(String username){
         this.username=username;
@@ -64,7 +64,7 @@ public class validationentity{
         this.age=age;
     }
 
-    public validationentity( @Id
+    public validationentity(@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     Long id,
 
