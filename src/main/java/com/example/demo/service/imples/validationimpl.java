@@ -19,7 +19,7 @@ public validationentity postdata(validationentity st){
 }
 @Override
     public validationentity find(long id){
-        return stud.findById(id).orElseThrow()=>new v;
+        return stud.findById(id).orElseThrow()=>new validationexce("This id is invalid");
     }
 }
 
