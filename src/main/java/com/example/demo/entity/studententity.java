@@ -5,13 +5,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Data;
-import lombok.AllArgusConstructor;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
 
 @Data
-@AllArgusConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 public class studententity{
     @Id
