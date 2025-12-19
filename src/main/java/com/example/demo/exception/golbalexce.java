@@ -7,6 +7,6 @@ import com.example.demo.exception.validationexce;
 public class gobalexce{
     @ExceptionHandler(validationexce.class)
     public ResponseEntity<String> handleValidation(validationexce ex){
-    return ResponseEntity<String>("This is error is shown in the UI",Httpstatus.SUCCESSFULL);
+    return new ResponseEntity<String>("This is error is shown in the UI",Httpstatus.SUCCE);
     }
 }
