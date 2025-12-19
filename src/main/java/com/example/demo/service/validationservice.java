@@ -3,5 +3,5 @@ import com.example.demo.entity.validationentity;
 import java.util.List;
 public interface validationservice{
 validationentity postdata(validationentity id);
-validationentity findid(long id);
+validationentity find(long id);
 }

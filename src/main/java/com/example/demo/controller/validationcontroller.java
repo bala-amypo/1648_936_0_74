@@ -20,4 +20,9 @@ public class validationcontroller{
     public validationentity alldata(@PathVariable long id){
         return valid.findid(id);
     }
+    
+      @GetMapping("/GETID/{id}")
+    public studententity alldata(@PathVariable int id){
+        return ser.findid(id);
+    }
 }
