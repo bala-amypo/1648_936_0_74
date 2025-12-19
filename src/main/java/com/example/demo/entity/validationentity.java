@@ -26,8 +26,8 @@ public class validationentity{
    private int age;
 
     import java.time.LocalDate date;
-    import jakarta.validation.constrai
-    @past
+    import jakarta.validation.constraints.Past;
+    @Past
     private LocalDate date;
    public Long getId() {
     return id;
