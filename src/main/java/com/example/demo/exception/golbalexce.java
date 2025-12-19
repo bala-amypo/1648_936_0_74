@@ -26,4 +26,4 @@ public class gobalexce{
 //         // Create a response entity with a message and a status code
 //         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
 //     }
-// }
+// 
