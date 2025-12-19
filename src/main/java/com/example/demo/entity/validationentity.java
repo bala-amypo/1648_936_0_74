@@ -11,11 +11,11 @@ import jakarta.validation.constraints.Positive;
 import java.time.LocalDate;
 import jakarta.validation.constraints.Past;
 import lombok.Data;
-import lombok.AllArgusConstructor;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 @Entity
 @Data
-@AllArgusConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 public class validationentity{
     @Id
