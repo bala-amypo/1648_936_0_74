@@ -7,6 +7,6 @@ import com.example.demo.exception.validationexce;
 public class gobalexce{
     @ExceptionHandler(validationexce.class)
     public ResponseBody<String> handleValidationexeception(validationexce ex){
-    return new ResponseBody<String>(ex.getMessage(),Httpstatus.SUCCESS);
+    return new ResponseBody<String>(ex.getMessage(),HttpStatus.SUCCESS);
     }
 }
