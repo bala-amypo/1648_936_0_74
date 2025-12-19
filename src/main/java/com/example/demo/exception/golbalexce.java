@@ -7,6 +7,6 @@ import com.example.demo.exception.validationexce;
 public class gobalexce{
     @ExceptionHandler(validationexce.class)
     public ResponceBody<String> handleValidation(validationexce ex){
-    return ResponceBody<String>(ex."This is error is shown in the UI",Httpstatus.BAD_GATEWAY);
+    return ResponceBody<String>("This is error is shown in the UI",Httpstatus.SUCCESSFULL);
     }
 }
