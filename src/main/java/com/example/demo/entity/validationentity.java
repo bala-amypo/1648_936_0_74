@@ -8,6 +8,8 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
+import java.time.LocalDate date;
+import jakarta.validation.constraints.Past;
 @Entity
 public class validationentity{
     @Id
@@ -25,8 +27,6 @@ public class validationentity{
   @Positive(message="Age must be positive")
    private int age;
 
-import java.time.LocalDate date;
-import jakarta.validation.constraints.Past;
     @Past
     private LocalDate date;
    public Long getId() {
