@@ -17,12 +17,7 @@ public class validationcontroller{
       return valid.postdata(val);
   }
    @GetMapping("/GETID/{id}")
-    public validationentity alldata(@PathVariable long id){
-        return valid.findid(id);
-    }
-    
-      @GetMapping("/GETID/{id}")
-    public studententity alldata(@PathVariable int id){
-        return ser.findid(id);
+    public validationentity alldata(@Valid @PathVariable long id){
+        return valid.find(id);
     }
 }
