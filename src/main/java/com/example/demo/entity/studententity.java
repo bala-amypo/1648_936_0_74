@@ -6,6 +6,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 @Entity
+
+@Data
+@AllArgusConstructor
+@NoArgsConstructor
 public class studententity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

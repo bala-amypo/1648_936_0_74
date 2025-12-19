@@ -11,6 +11,9 @@ import jakarta.validation.constraints.Positive;
 import java.time.LocalDate;
 import jakarta.validation.constraints.Past;
 @Entity
+@Data
+@AllArgusConstructor
+@NoArgsConstructor
 public class validationentity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
