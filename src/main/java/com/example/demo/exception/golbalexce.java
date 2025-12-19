@@ -10,7 +10,7 @@ public class gobalexce{
     public ResponseEntity<String> handleValidationexeception(validationexce ex){
     return new ResponseEntity<String>(ex.getMessage(),Httptatus.SUCCESS);
     }
-// }
+}
 // import com.example.demo.exception.ValidationException;
 // import org.springframework.http.HttpStatus;
 // import org.springframework.http.ResponseEntity;
