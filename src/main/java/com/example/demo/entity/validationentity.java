@@ -25,7 +25,10 @@ public class validationentity{
   @Positive(message="Age must be positive")
    private int age;
 
-
+    import java.time.LocalDate date;
+    import jakarta.validation.constrai
+    @past
+    private LocalDate date;
    public Long getId() {
     return id;
     }
