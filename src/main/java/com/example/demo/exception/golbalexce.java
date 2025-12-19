@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponceBody;
 @RestControllerAdvice
 public class gobalexce{
     @ExceptionHandler(validationexce.class)
-    public ResponceBody<String> handleValidation(){
-        return "This is error is shown in the UI";
+    public ResponceBody<String> handleValidation(validationexce ex){
+    return ResponceBody<String>();
     }
 }
