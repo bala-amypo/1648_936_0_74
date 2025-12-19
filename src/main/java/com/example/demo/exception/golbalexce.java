@@ -8,6 +8,6 @@ import com.example.demo.exception.validationexce;
 public class golbalexce{
     @ExceptionHandler(validationexce.class)
     public ResponseEntity<String> handleValidationexeception(validationexce ex){
-    return new ResponseEntity<String>(ex.getMessage(),HttpStatus.BAD_REQUEST);
+    return new ResponseEntity<String>(ex.getMessage(),HttpStatus.SUCCESS);
     }
 }
