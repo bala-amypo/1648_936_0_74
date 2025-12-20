@@ -5,4 +5,4 @@ import com.example.demo.entity.studententity;
 @Repository
 public interface studentrepo extends JpaRepository<studententity,Integer>{
     
-}
+} 
